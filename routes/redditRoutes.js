@@ -67,7 +67,7 @@ router.get("/posts", authenticateReddit, async (req, res) => {
       }
     );
 
-    console.log(response.data.data);
+    // console.log(response.data.data);
 
     res.json({
       posts: response.data.data.children.map((child) => child.data),
